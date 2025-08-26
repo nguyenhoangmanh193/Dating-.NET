@@ -9,7 +9,7 @@ export const authGuard: CanActivateFn = (route, state) => {
 
   if( accountService.currentUser()) return true;
   else {
-    toast.erorr('You shall not pass');
+    toast.error('You shall not pass');
     return false;
   }
 };
